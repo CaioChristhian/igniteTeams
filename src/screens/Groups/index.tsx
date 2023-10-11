@@ -7,6 +7,7 @@ import { GroupCard } from '@components/GroupCard';
 
 import * as S from './styles';
 import { ListEmpty } from '@components/ListEmpty';
+import { Button } from '@components/Button';
 
 export function Groups() {
   const [groups, setGroupes] = useState<string[]>([]);
@@ -30,6 +31,9 @@ export function Groups() {
         )}
       />
       
+      <Button 
+        title='Criar nova turma'
+      />
     </S.Container>
   );
 }
